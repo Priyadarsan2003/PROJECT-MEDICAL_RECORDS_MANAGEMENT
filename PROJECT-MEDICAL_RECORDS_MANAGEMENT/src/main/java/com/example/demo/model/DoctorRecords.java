@@ -2,10 +2,10 @@ package com.example.demo.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+//import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "doctor_details")
+//@Table(name = "doctor_table")
 public class DoctorRecords {
 	@Id
 	private int id;
