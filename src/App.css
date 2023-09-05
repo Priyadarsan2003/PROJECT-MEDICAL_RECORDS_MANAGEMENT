@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:wght@200&display=swap');
+
+.default-page {
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  height: 100vh;
+  background-image: url('./Components/Assets/bgimg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  filter: blur(0); /* Initial no blur */
+  transition: filter 0.3s ease; /* Smooth transition for blur effect */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.login-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: darkred;
+}
+
+.login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(231, 236, 243, 0.9);
+  padding: 5% 8%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px; /* Increased form width */
+  text-align: center;
+  backdrop-filter: blur(5px); /* Apply blur effect to contents behind */
+  z-index: 1; /* Ensure the form is above other content */
+}
+
+.login-form h2 {
+  margin-bottom: 100px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.submit-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 80px;
+}
+
+.submit-button:hover {
+  background-color: darkred;
+}
+
+
+
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links {
+  margin-right: auto;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-link:hover {
+  color: #f00;
+  border-bottom: 2px solid #f00;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  background-color: #007acc; /* Header background color */
+  color: #fff;
+  padding: 20px;
+}
+
+/* About styles */
+.about {
+  background-color: #f0f0f0; /* About section background color */
+  padding: 20px;
+}
+
+/* Contact styles */
+.contact {
+  background-color: #d63d3d; /* Contact section background color */
+  padding: 20px;
+}
+
+/* Welcome message styles */
+.header h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+
+/* RecordForm styles */
+.record-form {
+  background-color: #dcf35c;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.record-form h2 {
+  margin-bottom: 10px;
+}
+
+.record-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.record-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.record-form button {
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.record-form button:hover {
+  background-color: #005b9f;
+}
+
+
+/* Text section styles */
+.text-section {
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.text-line {
+  font-size: 35px; /* Adjust font size as needed */
+  margin: 20px 0; /* Add spacing between lines of text */
+  color: #bc2f2f; /* Text color */
+}
+
+.about {
+  text-align: center; /* Center-align text */
+}
+
+.about p {
+  font-size: 20px; /* Increase text size as needed */
+}
+
+.contact {
+  text-align: center; /* Center-align text */
+}
+
+.contact p {
+  font-size: 20px; /* Increase text size as needed */
+}
+
+.post,
+.records {
+  text-align: center; /* Center-align contents */
+}
+
+/* records */
+/* Add these styles to your existing CSS file (App.css or a separate CSS file) */
+
+/* Center-align the record data and style the table */
+.record-list {
+  text-align: center; /* Center-align contents */
+}
+
+.record-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.record-table th,
+.record-table td {
+  border: 1px solid #49deff;
+  padding: 8px;
+  text-align: center;
+}
+
+.record-table th {
+  background-color: #45fc2d;
+}
+
+.record-table tr:nth-child(even) {
+  background-color: #34c8f5;
+}
+
+.record-table tr:hover {
+  background-color: #ddd;
+  padding-bottom: 20px;
+}
