@@ -21,7 +21,7 @@ public class Records {
 	private String patientName;
 	private int patientAge;
 	private String admittedDate;
-	private String dischargeDate;
+	private String dischargeDate = "Active";
 	private String diagnosis;
 	
 	@OneToOne(cascade = CascadeType.ALL)
